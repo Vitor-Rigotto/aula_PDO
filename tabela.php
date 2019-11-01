@@ -11,8 +11,8 @@ if (mysqli_connect_errno()) {
 	$comandoSQL = '
 					CREATE TABLE usuarios (
 					codigo INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-					nome VARCHAR(30) NOT NULL,
-					sobrenome VARCHAR(30) NOT NULL,
+					nome VARCHAR(255) NOT NULL,
+					nascimento DATETIME NOT NULL,
 					email VARCHAR(50),
 					senha VARCHAR(32),
 					horario TIMESTAMP
