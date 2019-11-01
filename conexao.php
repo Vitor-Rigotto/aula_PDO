@@ -2,7 +2,7 @@
 
 $server 	= '127.0.0.1';
 $usuario 	= 'root';
-$senha 		= ' ';
+$senha 		= '';
 $database	= 'aula';
 $con = mysqli_connect($server,$usuario,$senha,$database);
 if (mysqli_connect_errno()){

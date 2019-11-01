@@ -1,5 +1,5 @@
 <?php
-$conn = new PDO("mysql:dbname=aula;host=localhost","root","kalunga");
+$conn = new PDO("mysql:dbname=aula;host=localhost","root","");
 
 
 $stmt = $conn->prepare("DELETE FROM usuarios WHERE codigo = :CODIGO");

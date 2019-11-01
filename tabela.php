@@ -2,7 +2,7 @@
 
 $server 	= '127.0.0.1';
 $usuario 	= 'root';
-$senha 		= ' ';
+$senha 		= '';
 $database	= 'aula';
 $con = mysqli_connect($server,$usuario,$senha,$database);
 if (mysqli_connect_errno()) {
@@ -14,8 +14,10 @@ if (mysqli_connect_errno()) {
 					nome VARCHAR(30) NOT NULL,
 					sobrenome VARCHAR(30) NOT NULL,
 					email VARCHAR(50),
-					senha VARCHAR(32),
-					horario TIMESTAMP
+					naturalidade VARCHAR(32),
+                    ufnatural VARCHAR(2),
+                    estado VARCHAR(10),
+                    imagem VARCHAR(255)
 					)
 				';
 	mysqli_query($con,$comandoSQL);
